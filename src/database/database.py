@@ -37,8 +37,7 @@ class Database:
         print(tabulate(df, headers='keys', tablefmt='psql'))
 
     def exportar_excel(self, caminho_excel):
-        if self.df is None:
-            self.criar_dataframe()
+        self.criar_dataframe()
 
         self.df.to_excel(caminho_excel, engine="openpyxl", index=False)
         return self.df
