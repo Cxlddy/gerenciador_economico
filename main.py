@@ -50,7 +50,7 @@ while True:
         database.exportar_excel(caminho_excel)
         database.formatar_excel(caminho_excel)
         print(f"Excel exportado em: {caminho_excel}")
-        input("Digite Enter para continuar...")
+        input("\nDigite Enter para continuar...")
 
     elif esco == "5":
         clear()
